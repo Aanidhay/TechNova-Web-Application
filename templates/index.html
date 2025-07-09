@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Online Shopping for Electronics, Mobiles, Fashion & More</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="static/image/TechNova Logo.png" alt="TechNova">
+                        <span class="logo-text">TechNova</span>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <input type="text" placeholder="Search for products, brands and more" class="search-input">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Account & Cart -->
+                    <div class="header-actions">
+                        <div class="login-btn">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Login</span>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Wishlist</span>
+                        </div>
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Categories -->
+        <nav class="nav-categories">
+            <div class="container">
+                <ul class="category-list">
+                    <li><a href="#electronics"><i class="fa-solid fa-mobile-alt"></i> Electronics</a></li>
+                    <li><a href="#mobile"><i class="fa-solid fa-mobile-screen-button"></i> Mobiles</a></li>
+                    <li><a href="#laptops"><i class="fa-solid fa-laptop"></i> Laptops</a></li>
+                    <li><a href="#headphones"><i class="fa-solid fa-headphones"></i> Audio</a></li>
+                    <li><a href="#watches"><i class="fa-solid fa-clock"></i> Watches</a></li>
+                    <li><a href="#gaming"><i class="fa-solid fa-gamepad"></i> Gaming</a></li>
+                    <li><a href="#offers"><i class="fa-solid fa-tags"></i> Top Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="Home">
+        <div class="hero-banner">
+            <div class="banner-content">
+                <h1>India's <span class="highlight">#1</span> Online Shopping Destination</h1>
+                <p>Discover amazing deals on Electronics, Mobiles, Laptops & More</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fa-solid fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-undo"></i>
+                        <span>Easy Returns</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-shield-alt"></i>
+                        <span>Secure Payments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="static/image/intro.jpg" alt="Electronics Collection">
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <h2 class="section-title">Best of Electronics</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="static/image/Samsung S25 Ultra.jpeg" alt="Samsung S25 Ultra">
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Samsung Galaxy S25 Ultra</h3>
+                        <div class="deal-price">
+                            <span class="current-price">₹1,03,999</span>
+                            <span class="original-price">₹1,29,999</span>
+                        </div>
+                        <div class="deal-rating">
+                            <span class="rating">4.5 ★</span>
+                            <span class="reviews">(2,341)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="static/image/Oneplus 13s.jpg" alt="OnePlus 13s">
+                        <span class="discount-badge">15% OFF</span>
+                    </div>
+                    <div class="deal-info">
+                        <h3>OnePlus 13s</h3>
+                        <div class="deal-price">
+                            <span class="current-price">₹45,899</span>
+                            <span class="original-price">₹53,999</span>
+                        </div>
+                        <div class="deal-rating">
+                            <span class="rating">4.3 ★</span>
+                            <span class="reviews">(1,876)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="static/image/Poco F7.png" alt="Poco F7">
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Poco F7 5G</h3>
+                        <div class="deal-price">
+                            <span class="current-price">₹23,999</span>
+                            <span class="original-price">₹31,999</span>
+                        </div>
+                        <div class="deal-rating">
+                            <span class="rating">4.2 ★</span>
+                            <span class="reviews">(3,521)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="static/image/Iphone 16.jpg" alt="iPhone 16">
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Apple iPhone 16</h3>
+                        <div class="deal-price">
+                            <span class="current-price">₹1,16,999</span>
+                            <span class="original-price">₹1,29,999</span>
+                        </div>
+                        <div class="deal-rating">
+                            <span class="rating">4.6 ★</span>
+                            <span class="reviews">(892)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="About">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="static/image/why choose us.jpg" alt="Why Choose TechNova">
+                </div>
+                <div class="about-text">
+                    <h2>Why Choose <span class="highlight">TechNova</span>?</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-star"></i>
+                            <div>
+                                <h4>Curated Quality</h4>
+                                <p>Handpicked products ensuring top-notch quality and value</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-shipping-fast"></i>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Swift delivery with tracking and hassle-free returns</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-tags"></i>
+                            <div>
+                                <h4>Best Prices</h4>
+                                <p>Competitive pricing with exclusive deals and discounts</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-shield-alt"></i>
+                            <div>
+                                <h4>Secure Shopping</h4>
+                                <p>Encrypted payments and complete data protection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Products Section-->
+    <section class="products-section" id="Menu">
+        <div class="container">
+            <h2 class="section-title">Latest <span class="highlight">Launches</span></h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Samsung S25 Ultra.jpeg" alt="Samsung S25 Ultra">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Samsung Galaxy S25 Ultra</h3>
+                        <div class="product-specs">
+                            <span>12GB RAM | 256GB ROM | 6.9" Display</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.5 ★</span>
+                            <span class="reviews">(2,341)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,03,999</span>
+                            <span class="original-price">₹1,29,999</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Oneplus 13s.jpg" alt="OnePlus 13s">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">15% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">OnePlus 13s</h3>
+                        <div class="product-specs">
+                            <span>12GB RAM | 256GB ROM | 6.32" Display</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.3 ★</span>
+                            <span class="reviews">(1,876)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹45,899</span>
+                            <span class="original-price">₹53,999</span>
+                            <span class="discount">15% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Poco F7.png" alt="Poco F7">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Poco F7 5G</h3>
+                        <div class="product-specs">
+                            <span>12GB RAM | 256GB ROM | 6.83" Display</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.2 ★</span>
+                            <span class="reviews">(3,521)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹23,999</span>
+                            <span class="original-price">₹31,999</span>
+                            <span class="discount">25% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Iphone 16.jpg" alt="iPhone 16">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Apple iPhone 16</h3>
+                        <div class="product-specs">
+                            <span>128GB | 6.1" Display | A18 Chip</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.6 ★</span>
+                            <span class="reviews">(892)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,16,999</span>
+                            <span class="original-price">₹1,29,999</span>
+                            <span class="discount">10% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Asus tuf gaming.jpg" alt="Asus TUF Gaming">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">18% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Asus TUF Gaming A15</h3>
+                        <div class="product-specs">
+                            <span>16GB RAM | 512GB SSD | RTX 4060</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.4 ★</span>
+                            <span class="reviews">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,06,599</span>
+                            <span class="original-price">₹1,29,999</span>
+                            <span class="discount">18% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/HP Victus gaming.jpeg" alt="HP Victus Gaming">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">22% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">HP Victus Gaming</h3>
+                        <div class="product-specs">
+                            <span>16GB RAM | 1TB SSD | RTX 4050</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.3 ★</span>
+                            <span class="reviews">(987)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,01,399</span>
+                            <span class="original-price">₹1,29,999</span>
+                            <span class="discount">22% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Apple Airpods 4.jpg" alt="Apple AirPods 4">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">12% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Apple AirPods 4</h3>
+                        <div class="product-specs">
+                            <span>Active Noise Cancellation | USB-C</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.5 ★</span>
+                            <span class="reviews">(2,156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹16,899</span>
+                            <span class="original-price">₹19,199</span>
+                            <span class="discount">12% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="static/image/Apple watch series7.jpg" alt="Apple Watch Series 7">
+                        <button class="wishlist-btn">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <span class="discount-badge">15% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Apple Watch Series 7</h3>
+                        <div class="product-specs">
+                            <span>45mm GPS | Always-On Display</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="rating">4.4 ★</span>
+                            <span class="reviews">(1,567)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹33,999</span>
+                            <span class="original-price">₹39,999</span>
+                            <span class="discount">15% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+    Gallary 
+
+   <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image/gallary_1.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_2.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_3.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_4.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_5.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_6.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </div> -->
+
+
+
+
+    <!--Review-->
+    <section class="review-section" id="Review">
+        <div class="container">
+            <h2 class="section-title">Customer <span class="highlight">Reviews</span></h2>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="static/image/akash.png" alt="Akash" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Akash Sharma</h3>
+                                <div class="review-rating">
+                                    <span class="rating">5.0 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">2 weeks ago</div>
+                    </div>
+                    <div class="review-content">
+                        <h4>Amazing smartphone purchase!</h4>
+                        <p>Bought the Samsung S25 Ultra from TechNova. Fast delivery, genuine product, and excellent customer service. The phone quality is top-notch and exactly as described. Highly recommended!</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="static/image/sam.png" alt="Sam" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Sam Patel</h3>
+                                <div class="review-rating">
+                                    <span class="rating">4.5 ★★★★☆</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">1 month ago</div>
+                    </div>
+                    <div class="review-content">
+                        <h4>Great laptop deals!</h4>
+                        <p>Found the best prices for gaming laptops here. The Asus TUF Gaming laptop I ordered came in perfect condition with all accessories. Customer support was very helpful throughout.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="static/image/sarah.png" alt="Sarah" class="reviewer-image">
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Sarah Wilson</h3>
+                                <div class="review-rating">
+                                    <span class="rating">5.0 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">3 days ago</div>
+                    </div>
+                    <div class="review-content">
+                        <h4>Love my new AirPods!</h4>
+                        <p>Purchased Apple AirPods 4 and they arrived next day. Sound quality is excellent and the noise cancellation works perfectly. TechNova is now my go-to electronics store!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Newsletter Section-->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with Latest <span class="highlight">Tech Deals</span></h2>
+                    <p>Subscribe to get exclusive offers, new product launches, and special discounts delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>TechNova</h2>
+                <p>Your trusted partner for all electronics and gadgets. Quality products, great prices, and exceptional service.</p>
+                <div class="footer_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Categories</h2>
+                <p>Smartphones</p>
+                <p>Laptops</p>
+                <p>Tablets</p>
+                <p>Audio</p>
+                <p>Wearables</p>
+                <p>Gaming</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Customer Care</h2>
+                <p>Help Center</p>
+                <p>Track Your Order</p>
+                <p>Returns & Refunds</p>
+                <p>Warranty</p>
+                <p>Contact Support</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Company</h2>
+                <p>About TechNova</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact Info</h2>
+                <p><i class="fa-solid fa-phone"></i> 1800-123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> support@technova.com</p>
+                <p><i class="fa-solid fa-clock"></i> 24/7 Customer Support</p>
+                <p><i class="fa-solid fa-shield-alt"></i> Secure Shopping</p>
+            </div>
+
+        </div>
+
+        <div class="footer_bottom">
+            <p class="end">© 2025 TechNova. All rights reserved. | Made with ❤️ by Akash Chauhan</p>
+        </div>
+
+    </footer>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot-container" style="display: none;">
+        <div class="chatbot-header">TechNova Assistant
+            <button id="chat-close-btn" class="chat-close-btn" title="Close chat" type="button">
+                <i class="fa-solid fa-times"></i>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()" type="button">Send</button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle-btn" type="button" title="Chat with us!">
+        <span class="sr-only">Chat with us!</span>
+        <i class="fa-solid fa-comments"></i>
+    </button>
+
+    <!-- Chatbot JavaScript -->
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Display user message
+            const messagesDiv = document.getElementById('chatbot-messages');
+            messagesDiv.innerHTML += `<div class="user-message">${message}</div>`;
+            input.value = '';
+
+            // Send message to backend
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message
+                    })
+                });
+                const data = await response.json();
+
+                // Display bot response
+                messagesDiv.innerHTML += `<div class="bot-message">${data.response}</div>`;
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Auto-scroll to latest message
+            } catch (error) {
+                messagesDiv.innerHTML += `<div class="bot-message">Error: Could not connect to the chatbot.</div>`;
+            }
+        }
+
+        // Allow sending message with Enter key
+        document.getElementById('user-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // Chatbot toggle logic
+        document.getElementById('chat-toggle-btn').addEventListener('click', function() {
+            const chatbot = document.getElementById('chatbot');
+            const toggleBtn = document.getElementById('chat-toggle-btn');
+            if (chatbot.style.display === 'none' || chatbot.style.display === '') {
+                chatbot.style.display = 'flex';
+                toggleBtn.style.display = 'none';
+            } else {
+                chatbot.style.display = 'none';
+                toggleBtn.style.display = 'block';
+            }
+        });
+
+        // Chatbot close logic
+        document.getElementById('chat-close-btn').addEventListener('click', function() {
+            document.getElementById('chatbot').style.display = 'none';
+            document.getElementById('chat-toggle-btn').style.display = 'block';
+        });
+    </script>
+
+
+</body>
+
+</html>
