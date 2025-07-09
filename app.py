@@ -4,8 +4,17 @@ import os
 
 app = Flask(__name__)
 
-genai.configure(api_key="AIzaSyBTliuZfUGNCZJ90Q7KBVekNNBMJqYTM8E")
-model = genai.GenerativeModel('gemini-2.5-flash')
+# Use environment variable for API key in production
+API_KEY = os.environ.get('GOOGLE_API_KEY', 'AIzaSyBTliuZfUGNCZJ90Q7KBVekNNBMJqYTM8E')
+
+# Configure Gemini AI
+try:
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel('gemini-2.5-flash')
+    AI_ENABLED = True
+except Exception as e:
+    print(f"Warning: Could not configure Gemini AI: {e}")
+    AI_ENABLED = False
 
 BUSINESS_CONTEXT = """
 You are NovaBot, the friendly and knowledgeable virtual assistant for TechNova, a modern and trusted online electronics marketplace. Our primary audience includes tech enthusiasts, students, professionals, and anyone looking for quality electronics and gadgets at competitive prices.
@@ -106,12 +115,22 @@ def home():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json.get('message')
+    
+    if not AI_ENABLED:
+        return jsonify({
+            'response': 'Sorry, our AI assistant is currently unavailable. Please contact support at 1800-123-4567 or support@technova.com for assistance! 😊'
+        })
+    
     try:
         prompt = f"{BUSINESS_CONTEXT}\nCustomer: {user_message}\nNovaBot:"
         response = model.generate_content(prompt)
         return jsonify({'response': response.text})
     except Exception as e:
-        return jsonify({'response': f'Error: {str(e)}'})
+        return jsonify({
+            'response': 'Sorry, I encountered an error. Please try again or contact our support team! 😊'
+        })
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Use PORT environment variable for deployment platforms
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
